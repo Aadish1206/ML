@@ -31,15 +31,15 @@ class Reverse(Solution):
     def reverseMerge(self, merged: str) -> str:
         
         # Converted the string to swap
-        char_list = list(merged)
-        length = len(char_list)
+        string = list(merged)
+        length = len(string)
         
         #For loop to swap characters from the beginning and end
         for i in range(length // 2):
-            char_list[i], char_list[length - i - 1] = char_list[length - i - 1], char_list[i]
+            string[i], string[length - i - 1] = string[length - i - 1], string[i]
         
         # Join the reversed characters back into a string
-        reversed_result = ''.join(char_list)
+        reversed_result = ''.join(string)
         return reversed_result
 
 # Create an instance of the Solution class
@@ -51,7 +51,7 @@ word2 = input("Enter the second word: ")
 merged_result = solution.mergeAlternately(word1, word2)
 
 
-reversed_result = solution.reverseMerged(merged_result)
+reversed_result = solution.reverseMerge(merged_result)
 
 
 #print("Merged Result:", merged_result)
