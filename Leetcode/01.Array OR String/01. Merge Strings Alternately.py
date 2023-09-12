@@ -3,7 +3,7 @@ class Solution:
         #print(len(word1))
         #print(len(word2))
         
-        #if length of word1 is zero then return word 2 and if word 2 is zero return word 
+        #if length of word1 is zero then return word 2 and if word 2 is zero return word 1
         if len(word1) == 0:
             return word2
         if len(word2) == 0:
