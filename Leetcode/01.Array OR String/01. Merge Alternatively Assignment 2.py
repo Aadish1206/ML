@@ -27,7 +27,7 @@ class Solution:
             
         return merged
 
-class SplitMergeSolution(Solution):
+class SplitMerge(Solution):
     def splitMerge(self, word1: str, word2: str) -> str:
     
         #Split word1 into two parts
@@ -64,7 +64,7 @@ class SplitMergeSolution(Solution):
         return final_merged_result
 
 
-solution = SplitMergeSolution()
+solution = SplitMerge()
 word1 = input("Enter the first word: ")
 word2 = input("Enter the second word: ")
 result = solution.splitMerge(word1, word2)
