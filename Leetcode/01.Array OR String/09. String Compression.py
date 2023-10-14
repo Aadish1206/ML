@@ -21,10 +21,14 @@ def compress(chars):
             for digit in count_str:
                 chars[nextchar] = digit
                 nextchar += 1
+                
+    
+    chars = chars[:nextchar]
 
-    return nextchar
+    return len(chars)
 
+# Example usage:
 chars = ["a", "a", "b", "b", "c", "c", "c"]
 result_len = compress(chars)
-print(chars[:result_len])  
-print(result_len)         
+print(chars)       
+print(result_len)  
