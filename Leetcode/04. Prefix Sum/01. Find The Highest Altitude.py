@@ -4,7 +4,9 @@ def findHighestAltitude(gain):
 
     for i in range(len(gain)):
         current += gain[i] 
+        #print(current)
         highest = max(highest, current)
+        #print(highest)
 
     return highest
 
