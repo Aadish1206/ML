@@ -9,9 +9,13 @@ df = pd.read_csv(csv_file_path, skiprows=3, header=3)
 
 print(df)
 
+#in a data frame count the missing values- None isnull function count
+
 missingcount = df.isnull().sum()
 
 print(missingcount)
+
+#same dataframe column abcd to adcb 
 
 df = df[['Location', 'Domain', 'Transaction_count', 'Value', 'Date']]
 
