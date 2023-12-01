@@ -1,0 +1,24 @@
+import numpy as np
+import pandas as pd
+
+csv_file_path = r"C:\Users\aadis\Desktop\Category.csv"
+df = pd.read_csv(csv_file_path)
+
+quantity_column = df['Quantity']
+
+minimum = np.min(quantity_column)
+median = np.median(quantity_column)
+percentile_25 = np.percentile(quantity_column, 25)
+maximum = np.max(quantity_column)
+
+print(f"Minimum: {minimum}")
+print(f"Median: {median}")
+print(f"25th Percentile: {percentile_25}")
+print(f"Maximum: {maximum}")
+
+#Print Unique Items
+unique_items = df['Item'].unique()
+
+print("Unique Items:")
+for item in unique_items:
+    print(item)
