@@ -11,10 +11,10 @@ median = np.median(quantity_column)
 percentile_25 = np.percentile(quantity_column, 25)
 maximum = np.max(quantity_column)
 
-print(f"Minimum: {minimum}")
-print(f"Median: {median}")
-print(f"25th Percentile: {percentile_25}")
-print(f"Maximum: {maximum}")
+print("Minimum: {minimum}")
+print("Median: {median}")
+print("25th Percentile: {percentile_25}")
+print("Maximum: {maximum}")
 
 #Print Unique Items
 unique_items = df['Item'].unique()
