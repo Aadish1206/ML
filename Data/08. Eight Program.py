@@ -6,6 +6,7 @@ df = pd.read_csv(csv_file_path)
 
 quantity_column = df['Quantity']
 
+#to calculate Minimum,Median,Percentile_25 and maximum
 minimum = np.min(quantity_column)
 median = np.median(quantity_column)
 percentile_25 = np.percentile(quantity_column, 25)
