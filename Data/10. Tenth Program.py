@@ -14,4 +14,4 @@ predicted_values = df['Predicted']
 
 mae = mean_absolute_error(actual_values, predicted_values)
 
-print(f"Mean Absolute Error (MAE): {mae}")
+print(f"mean absolute error (MAE): {mae}")
